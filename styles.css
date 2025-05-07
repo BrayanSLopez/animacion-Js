@@ -69,12 +69,10 @@ footer {
     gap: 20px;
 }
   
-  /* Estilos para los divs dentro del footer */
 footer > div {
     margin-bottom: 10px;
 }
   
-  /* Estilos para los párrafos dentro del footer */
 footer p {
     margin: 5px 0;
 }  

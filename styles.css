@@ -1,0 +1,80 @@
+html,body {
+    margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: Arial, sans-serif;
+    background-color: #dad7d7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+.animales {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+ }
+  
+.animal {
+    width: calc(50% - 20px);
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+  
+.animal img {
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+  
+.animal:hover img {
+    transform: scale(1.1);
+}
+  
+.animal h2 {
+    margin-top: 10px;
+    font-size: 25px;
+    color: #0a0a0a;
+}
+
+.titulo {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #0b0b0c;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+  
+.titulo:hover {
+    transform: scale(1.1);
+    color: #323bb4;
+}
+
+footer {
+    background-color: #dad7d7;
+    padding-top: 100px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+  
+  /* Estilos para los divs dentro del footer */
+footer > div {
+    margin-bottom: 10px;
+}
+  
+  /* Estilos para los párrafos dentro del footer */
+footer p {
+    margin: 5px 0;
+}  

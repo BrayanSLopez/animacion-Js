@@ -10,7 +10,6 @@ const animals = [
     const audio = new Audio(animal.sound);
   
     audio.addEventListener('loadedmetadata', () => {
-      // Establecer la duración máxima en 20 segundos
       const maxDuration = 20;
       if (audio.duration > maxDuration) {
         audio.currentTime = audio.duration - maxDuration;
@@ -18,16 +17,14 @@ const animals = [
     });
   
     element.addEventListener('click', () => {
-      // Reproducir sonido
       audio.play();
   
-      // Animación con anime.js
       anime({
         targets: element,
-        rotate: '+=360', // Rotar 360 grados desde la posición actual
+        rotate: '+=360', 
         duration: 1000,
         easing: 'easeInOutQuad',
-        loop: false // Asegura que la animación se ejecute una sola vez
+        loop: false 
       });
     });
   });
